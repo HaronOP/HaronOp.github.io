@@ -1,0 +1,327 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
+}
+body * {
+  padding: 5px;
+}
+body * {
+  padding: 3px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+body header img {
+  width: 60px;
+}
+header .main_header {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+body header .main_header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+header .main_header .cathedra_logo_and_info {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  gap: 30px;
+}
+.personal_info{
+  margin-left: 5px;
+}
+body header .main_header .cathedra_logo_and_info .tntu_and_personal_info {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+body header .main_header .cathedra_logo_and_info .tntu_and_personal_info .tntu_info_and_logo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+body header .main_header .cathedra_logo_and_info .tntu_and_personal_info .tntu_info_and_logo .tntu_info {
+  margin-right: auto;
+}
+body header .main_header .cathedra_logo_and_info .cathedra_logo {
+  width: 120px;
+  height: 120px;
+}
+body header .main_header .main_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  gap: 5px;
+}
+body main {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: fit-content;
+  box-shadow: 0px 4px 32px 0px #000000;
+}
+main{
+  margin-top: 50px;
+}
+body main .main_content .tree_in_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.blockh{
+  grid-column: span 1;
+}
+body main .main_content .block a {
+  width: 100%;
+  text-align: right;
+  display: block;
+}
+body main .interesting_content .block {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+body main .interesting_content .block img {
+  width: 45%;
+  min-width: 200px;
+}
+body main .hobby_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+body main .biografy_content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+body main .biografy_content img {
+  width: 90%;
+}
+body footer {
+  margin-top: auto;
+  background: rgb(94, 6, 6);
+  height: 60px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.main_menu>a{
+  color: rgb(107, 31, 31);
+  font-size: 22px;
+}
+
+a:hover{
+  opacity: 0.6;
+}
+
+.main_menu{
+  justify-content: center;
+}
+
+.advertaisemet{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.advertaisement{
+  text-align: center;
+}
+
+.title{
+  padding-left: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+.allcontent{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.advert{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.allcontent{
+  color: #fff;
+}
+
+.containet{
+  background-color: rgb(171, 120, 120);
+}
+.advert{
+  background-color: rgb(171, 120, 120);
+}
+
+.block{
+  border-bottom: 1px solid #000;
+}
+
+.advertisenentb{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.advert1b{
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+.maiin_con{
+  display: flex;
+}
+.biografy_content, .group_content, .maiin_con, .interst_con{
+  background-color: rgb(171, 120, 120);
+  color: #fff;
+  font-size: 20px;
+}
+
+footer{
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 800px) {
+  body header .main_header {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  body header .main_header .cathedra_logo_and_info {
+    grid-template-columns: 1fr;
+  }
+
+  body header .main_header .cathedra_logo_and_info .tntu_and_personal_info {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  body header .main_header .cathedra_logo_and_info .cathedra_logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  body header .main_header .main_menu {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  body main {
+    width: 100%;
+    margin: 0;
+  }
+
+  body main .main_content .tree_in_row {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  body main .main_content .block {
+    text-align: center;
+  }
+
+  body main .interesting_content .block {
+    grid-template-columns: 1fr;
+  }
+
+  body main .interesting_content .block img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  body main .biografy_content {
+    grid-template-columns: 1fr;
+  }
+
+  body main .hobby_content {
+    grid-template-columns: 1fr;
+  }
+
+  body footer {
+    grid-template-columns: 1fr;
+    align-items: center;
+    height: auto;
+  }
+
+  .main_menu > a {
+    font-size: 18px;
+  }
+
+  .allcontent {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+  }
+
+  .advert {
+    grid-template-rows: 1fr;
+  }
+
+  .advert_content {
+    border-bottom: 1px solid #000;
+  }
+
+  .advert1 {
+    padding: 20px;
+    border-bottom: 1px solid #000;
+  }
+
+  .personal_info {
+    padding-left: 0px;
+  }
+
+  .cathedra_logo_c {
+    justify-content: center;
+    display: grid;
+  }
+
+  .tntu_info_and_logo {
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .allcontent {
+    padding: 20px;
+  }
+
+
+  header {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .maiin_con {
+    grid-template-rows: auto auto;
+  }
+  .img_fon{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .advertisenentb {
+    grid-template-columns: 1fr;
+    
+  }
+  .advert1b{
+    padding: 10px;
+  }
+  .advertaisemet{
+    border-bottom: 1px solid #000;
+  }
+  .main_menu {
+    text-align: center;
+  }
+  body main .biografy_content img {
+    width: 30%;
+  }
+
+}
