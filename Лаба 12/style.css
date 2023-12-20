@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  gap: 30px;
+  background-color: #ff838327;
+}
+body * {
+  padding: 3px;
+}
+body header {
+  position: static;
+  top: 0;
+  display: flex;
+  margin-top: 2px;
+}
+body header img {
+  width: 60px;
+}
+body header .main_header {
+  width: 100%;
+}
+body header .main_header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+body header .main_header .cathedra_logo_and_info {
+  display: flex;
+  justify-content: space-between;
+}
+.personal_info{
+  margin-left: 5px;
+}
+body header .main_header .cathedra_logo_and_info .tntu_and_personal_info {
+  width: 100%;
+}
+body header .main_header .cathedra_logo_and_info .tntu_and_personal_info .tntu_info_and_logo {
+  display: flex;
+}
+body header .main_header .cathedra_logo_and_info .tntu_and_personal_info .tntu_info_and_logo .tntu_info {
+  margin-right: auto;
+}
+body header .main_header .cathedra_logo_and_info .cathedra_logo {
+  width: 120px;
+  height: 120px;
+}
+body header .main_header .main_menu {
+  display: flex;
+  gap: 5px;
+}
+body main {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: fit-content;
+  box-shadow: 0px 4px 32px 0px #000000;
+}
+body main .main_content .tree_in_row {
+  display: flex;
+}
+.blockh{
+  flex: 0 1 33.3333%;
+}
+body main .main_content .block a {
+  width: 100%;
+  text-align: right;
+  display: block;
+}
+body main .interesting_content .block {
+  display: flex;
+}
+body main .interesting_content .block img {
+  width: 45%;
+}
+body main .hobby_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body main .biografy_content {
+  display: flex;
+}
+body main .biografy_content img {
+  width: 100%;
+}
+body footer {
+  margin-top: auto;
+  background: rgb(94, 6, 6);
+  height: 60px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.main_menu>a{
+  color: rgb(107, 31, 31);
+  font-size: 22px;
+}
+
+a:hover{
+  opacity: 0.6;
+}
+
+.main_menu{
+  justify-content: center;
+}
+
+.advertaisemet{
+  display: flex;
+}
+
+.advertaisement{
+  flex: 1 0 50%;
+  text-align: center;
+}
+
+.advert2{
+  min-height: 400px;
+  max-height: 400px;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.title{
+  padding-left: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+.allcontent{
+  display: flex;
+}
+
+.advert{
+  display: flex;
+  flex-direction: column;
+}
+
+.allcontent{
+  color: #fff;
+  
+}
+
+.containet{
+  background-color: rgb(171, 120, 120);
+}
+.advert{
+  background-color: rgb(171, 120, 120);
+}
+
+.block{
+  border-bottom: 1px solid #000;
+}
+
+.advertisenentb{
+  display: flex;
+}
+
+.advert1b{
+  flex: 0 1 33.3333%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.maiin_con{
+  display: flex;
+}
+.biografy_content, .group_content, .maiin_con, .interst_con{
+  background-color: rgb(171, 120, 120);
+  color: #fff;
+  font-size: 20px;
+}
+
+footer{
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.banner2{
+  display: none;
+}
+
+#numericInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FF9800;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#numericInput::placeholder {
+  color: #FF9800;
+}
+
+#numericInput:focus {
+  border-color: #FF5722;
+}
+.numbers{
+  display: flex;
+  justify-content: center;
+}
+
+#custommenu {
+  width: 150px;
+  height: 150px;
+  visibility: hidden;
+  position: absolute;
+  background: url("bg_menu.jpg") no-repeat center center ;
+}
+
+.menu-item {
+  color: rgb(255, 255, 255);
+  font-size: 10pt;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.block-l{
+  display: grid;
+  justify-content: start;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #fff;
+}
+.block-l:nth-last-child(1){
+  border: none;
+}
+.upp{
+  justify-content: center;
+}
+.block-ll{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+.block-ll:nth-last-child(1){
+  border: none;
+}
+.coment{
+  flex-direction: column;
+  min-width: 1000px;
+}
+.buton1 {
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.buton1:hover {
+  background-color: #e07d00;
+}
+
+form {
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.tr {
+  background-color: #ffcc80;
+  display: flex;
+  flex-direction: column;
+  min-width: 510px;
+}
+#pwd1{
+  font-size: 20px;
+  min-width: 400px;
+}
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.warning {
+  color: #ff4500;
+}
+
+#phoneNumberInputL, #numberInput, #emailInput, #passwordInput, #postalCode{
+  min-width: 280px;
+}
+#phoneNumberU, #textInputP{
+  font-weight: 600;
+  min-width: 350px;
+}
+label{
+  font-size: 30px;
+}
+label, select, button {
+  display: block;
+  margin-top: 10px;
+  
+}
+
+select, button {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 800px) {
+  .allcontent{
+    flex-direction: column;
+  }
+
+  .advert2{
+    min-height: 200px;
+    max-height: none;
+    max-width: none;
+    display: grid;
+    margin-left: 30px;
+  }
+  .banner2{
+    display: block;
+  }
+  .banner1{
+    display: none;
+  }
+}

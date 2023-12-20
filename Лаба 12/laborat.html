@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна 11</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <header>
+        <img style="width: 200px; height: 300px;" src="photo_2023-12-10_12-57-10.jpg" class="my_photo">
+        <div class="main_header">
+            <div class="cathedra_logo_and_info">
+                <div class="tntu_and_personal_info">
+                    <div class="tntu_info_and_logo">
+                        <div class="tntu_info">
+                            Тернопільський національний технічни<br>
+                            університет ім. Івана Пулюя<br>
+                            Факультет ФІС<br>
+                            Кафедра комп’ютерної інженерії<br>
+                        </div>
+                        <img src="photo_2023-11-21_23-05-57.jpg" class="tntu_logo">
+                        <img src="photo_2023-11-21_23-05-54.jpg" class="fis_logo">
+                    </div>
+                    <div class="personal_info">
+                        Персональна сторінка<br>
+                        Приступа Роман Федорович<br>
+                        Група СІ-32<br>
+                    </div>
+                </div>
+                <img src="photo_2023-11-21_23-05-49.jpg" class="cathedra_logo">
+            </div>
+            <div class="main_menu">
+                <a href="biografy_page.html">
+                    Біографія
+                </a>
+                <a href="my_group.html">
+                    Моя група
+                </a>
+                <a href="hobby.html">
+                    Хоббі
+                </a>
+                <a href="interesting.html">
+                    Цікаві факти
+                </a>
+                
+                <a href="index.html">
+                    Головна
+                </a>
+                <a href="../index.html">
+                    Меню
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+<main>
+
+
+    <div class="biografy_content coment">
+        <div class="block-l">
+            <label for="otherOptions">Інші опції:</label>
+                  <select id="otherOptions" onchange="toggleButton();">
+                        <option>ОпціЇ</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                  </select>
+
+                  <button id="myButton" disabled>Повернутися на головну</button>
+        </div>
+
+        
+        <div class="block-l">
+            <form>
+                <table>
+                   <tr class="tr">
+                      <td>Пароль:</td>
+                      <td>
+                            <input type="password" id="pwd1" onkeyup="editPassword('pwd1','message',8,16);">
+                      </td>
+                      <td>
+                            <span id="message" class="warning"></span>
+                      </td>
+                   </tr>
+                </table>
+          </form>
+        </div>
+        <div class="block-l">
+            <label for="regions">Регіони:</label>
+                  <select id="regions" onchange="showStreets(this.selectedIndex, 'streets'); toggleButton();">
+                     <option>Виберіть район</option>
+                     <option>Галицький</option>
+                     <option>Франківський</option>
+                     <option>Личаківський</option>
+                     <option>Сихівський</option>
+                     <option>Шевченківський</option>
+                     <option>Всі регіони</option>
+                  </select>
+
+                  <label for="streets">Вулиці:</label>
+                  <select id="streets" style="visibility: hidden;" onchange="toggleButton();">
+                     <option></option>
+                  </select>
+        </div>
+        
+        <div class="block-l">
+            <table border="1" cellspacing="0" cellpadding="5" bordercolor="#000000">
+                <tr>
+                    <td>#</td>
+                    <td>Назва товару</td>
+                    <td>Виробник</td>
+                    <td>Ціна</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="899" onclick="getTotalPrice()"></td>
+                    <td>Процесор</td>
+                    <td>TechSpeed</td>
+                    <td>899</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="1299" onclick="getTotalPrice()"></td>
+                    <td>Ноутбук</td>
+                    <td>ElectroBook</td>
+                    <td>1299</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="499" onclick="getTotalPrice()"></td>
+                    <td>Монітор</td>
+                    <td>ViewVista</td>
+                    <td>499</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="799" onclick="getTotalPrice()"></td>
+                    <td>Гарнітура</td>
+                    <td>SonicSound</td>
+                    <td>799</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="349" onclick="getTotalPrice()"></td>
+                    <td>Миша</td>
+                    <td>ClickMaster</td>
+                    <td>349</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="159" onclick="getTotalPrice()"></td>
+                    <td>Клавіатура</td>
+                    <td>TypeTech</td>
+                    <td>159</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="119" onclick="getTotalPrice()"></td>
+                    <td>Флеш-драйв</td>
+                    <td>SpeedyStore</td>
+                    <td>119</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="649" onclick="getTotalPrice()"></td>
+                    <td>Смартфон</td>
+                    <td>MobileTech</td>
+                    <td>649</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="299" onclick="getTotalPrice()"></td>
+                    <td>Роутер</td>
+                    <td>ConnectX</td>
+                    <td>299</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="goods" value="199" onclick="getTotalPrice()"></td>
+                    <td>USB-кабель</td>
+                    <td>SpeedLink</td>
+                    <td>199</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" align="left">Сума:&nbsp;<font id="price"></font></td>
+                </tr>
+            </table>
+        </div>
+        <div class="block-l">
+            <img id="mapImage" src="photo_2023-12-10_12-57-10.jpg" usemap="#imageMap"  width="300" height="400">
+            <map name="imageMap">
+                <area shape="poly" coords="0,5,10,10,20,5">
+                <!-- Додайте інші області карти посилань, якщо необхідно -->
+            </map>
+            <button class="buton1" onclick="zoomMap(1.5, 'mapImage')">Zoom In</button>
+            <button class="buton1" onclick="zoomMap(0.75, 'mapImage')">Zoom Out</button>
+        </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div>Виконав Приступа Роман Федорович<br>roma.prystupa04@gmail.com</div>
+   </footer>
+   <script src="laborat11.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Головна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body oncontextmenu="showCustomMenu(true, event.clientX, event.clientY); return false;" onclick="showCustomMenu(false, event.clientX, event.clientY); return true;">
+    <div id="custommenu">
+        <div class="menu-item" onclick="doAction('copy');">Скопіювати вміст документа</div>
+        <div class="menu-item" onclick="doAction('close');">Закрити вікно</div>
+        <div class="menu-item" onclick="doAction('fontIncrease');">Збільшити шрифт</div>
+        <div class="menu-item" onclick="doAction('fontDecrease');">Зменшити шрифт</div>
+        <div class="menu-item" onmouseover="highlightMenuItem(this);" onmouseout="resetMenuItem(this);" onclick="doAction('changeBkg');">Змінити фон</div>
+    </div>
+<header>
+    <img id="iam" class="my_photo" style="width: 200px; height: 300px;"  src="photo_2023-12-10_12-57-10.jpg"
+    onmouseover="this.src='revers.jpg'"
+    onmouseout="this.src='photo_2023-12-10_12-57-10.jpg'">
+    <!--photo-->
+    <div class="main_header">
+        <div class="cathedra_logo_and_info">
+            <div class="tntu_and_personal_info">
+                <div class="tntu_info_and_logo">
+                    <div class="tntu_info">
+                        Тернопільський національний технічни<br>
+                        університет ім. Івана Пулюя<br>
+                        Факультет ФІС<br>
+                        Кафедра комп’ютерної інженерії<br>
+                    </div>
+                    <img src="photo_2023-11-21_23-05-57.jpg" class="tntu_logo">
+                    <img src="photo_2023-11-21_23-05-54.jpg" class="fis_logo">
+                </div>
+                <div class="personal_info">
+                    Персональна сторінка<br>
+                    Приступа Роман Федорович<br>
+                    Група СІ-32<br>
+                </div>
+            </div>
+            <img src="photo_2023-11-21_23-05-49.jpg" class="cathedra_logo">
+        </div>
+        <div class="main_menu">
+            <a href="biografy_page.html">
+                Біографія
+            </a>
+            <a href="my_group.html">
+                Моя група
+            </a>
+            <a href="hobby.html">
+                Хоббі
+            </a>
+            <a href="interesting.html">
+                Цікаві факти
+            </a>
+            <a href="index.html">
+                Головна
+            </a>
+            <a href="../index.html">
+                Меню
+            </a>
+        </div>
+        <div class="numbers">
+            <input type="text" id="numericInput" onkeypress="return checkNumber(event.key)" placeholder="Ввід номера">
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="allcontent">
+        <div class="containet">
+            <div class="title">
+                Головна
+            </div>
+            <div class="main_content">
+                <div class="block">
+                    <div>Лабораторна робота 11</div>
+                    <a href="laborat.html">
+                        Більше>>>>
+                    </a>
+                </div>
+                <div class="block">
+                    <div>Лабораторна робота 12</div>
+                    <a href="laborat1.html">
+                        Більше>>>>
+                    </a>
+                </div>
+                <div class="block">
+                    <div>Приступа Роман Федорович, 17.09.2004, спеціальність Комп’ютерна інженерія, студент ТНТУ</div>
+                    <a href="biografy_page.html">
+                        Більше>>>>>>
+                    </a>
+                </div>
+                <div class="block">
+                    <div>Студенти CI-32 активно займаються вивченням різноманітних аспектів комп'ютерної інженерії, включаючи програмування, архітектуру комп'ютерів, мережі та системи. Їхнє навчання включає в себе інтенсивні лекції, практичні лабораторії та проекти, які дозволяють застосовувати теоретичні знання на практиці.</div>
+                    <a href="my_group.html">
+                        Більше>>>>>
+                    </a>
+                </div>
+                <div class="tree_in_row">
+                    <div class="block blockh">
+                        <div>Поезія</div>
+                        <a href="hobby.html">
+                            Більше>>>
+                        </a>
+                    </div>
+                    <div class="block blockh">
+                        <div>Футбол</div>
+                        <a href="hobby.html">
+                            Більше>>>
+                        </a>
+                    </div>
+                    <div class="block blockh">
+                        <div>Книги</div>
+                        <a href="hobby.html">
+                            Більше>>>
+                        </a>
+                    </div>
+                </div>
+                <div class="block">
+                    <div>Міжпланетні Колонії</div>
+                    <a href="interesting.html">
+                        Більше>>>>
+                    </a>
+                </div>
+                <div class="block">
+                    <div>Квантова Комп'ютеризація</div>
+                    <a href="interesting.html">
+                        Більше>>>>
+                    </a>
+                </div>
+                <div class="block">
+                    <div>Гіперзвукові Пасажирські Літаки</div>
+                    <a href="interesting.html">
+                        Більше>>>>
+                    </a>
+                </div>
+                <div class="advertaisemet">
+                    <div class="advertaisement advertaisemetn_1"><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="UAH" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
+                </div>
+                    <div class="advertaisement advertaisemetn_2"><!-- weather widget start --><a target="_blank" href="https://hotelmix.com.ua/weather/ternopil-53963"><img src="https://w.bookcdn.com/weather/picture/32_53963_1_29_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=70241&domid=&anc_id=12108"  alt="booked.net"/></a><!-- weather widget end --></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="advert">
+            <div class="advertaisement advert2"><iframe class="banner1" src="banner/roma1.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+                <iframe class="banner2" src="banner1/roma2.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe></div>
+            <div class="advertaisement advert1"><div id='gcw_mainFe07r6a1O' class='gcw_mainFe07r6a1O'></div>
+            <a id='gcw_siteFe07r6a1O' href='https://freecurrencyrates.com/ru/'>FreeCurrencyRates.com</a>
+            <script>function reloadFe07r6a1O(){ var sc = document.getElementById('scFe07r6a1O');if (sc) sc.parentNode.removeChild(sc);sc = document.createElement('script');sc.type = 'text/javascript';sc.charset = 'UTF-8';sc.async = true;sc.id='scFe07r6a1O';sc.src = 'https://freecurrencyrates.com/ru/widget-vertical?iso=USD-EUR-GBP-JPY-CNY-RUB&df=2&p=Fe07r6a1O&v=fi&source=fcr&width=130&width_title=0&firstrowvalue=1&thm=dddddd,eeeeee,E78F08,F6A828,FFFFFF,cccccc,ffffff,1C94C4,000000&title=%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82&tzo=-120';var div = document.getElementById('gcw_mainFe07r6a1O');div.parentNode.insertBefore(sc, div);} reloadFe07r6a1O(); </script></div>
+        </div>
+    </div>
+</main>
+
+<footer>
+ <div>Виконав Приступа Роман Федорович<br>roma.prystupa04@gmail.com</div>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>

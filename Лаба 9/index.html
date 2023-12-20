@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота 9</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="list_container">
+            <div class="container">
+            <h2>Перевірка дійсного числа</h2>
+            <input type="text" id="numberInput" placeholder="235.5">
+            <button id="checkButton">Перевірити</button>
+            <div id="result"></div>
+            </div>
+
+            <div class="containe1">
+                <h2>Біжуча стрічка в рядку</h2>
+                <p id="floatingText">Тут може бути ваш власний текст</p>
+            </div>
+
+            <div class="containe2">
+                <h2>Перевірка електронної адреси</h2>
+                <input type="text" id="emailInput" placeholder="romaprystupa04@gmail.com">
+                <button onclick="checkEmail()">Перевірити</button>
+                <p id="resultat"></p>
+            </div>
+
+            <div class="containe3">
+                <h2>Видалення послідовних пробілів</h2>
+                <textarea id="textInput" placeholder="Текст з послідовними пробілами"></textarea>
+                <button onclick="processText()">Видалити Пробіли</button>
+                <p id="result3"></p>
+            </div>
+
+            
+            
+            <div class="container5">
+                <input type="date" id="birthdateInput2" placeholder="MM/DD/YYYY">
+                <button onclick="getBirthDayOfWeek()">День тижня народження</button>
+                <div id="resultContainer2"></div>
+            </div>
+            
+            <div class="container6">
+                <input type="date" id="birthdateInput3" placeholder="MM/DD/YYYY">
+                <button onclick="getPastDatesAndDays()">Дати та дні тижня 10, 12, 25 та 38 років тому</button>
+                <div id="resultContainer3"></div>
+            </div>
+            
+            <div class="container7">
+                <input type="date" id="birthdateInput4" placeholder="MM/DD/YYYY">
+                <button onclick="getFutureBirthday()">День тижня через три роки від дати народження</button>
+                <div id="resultContainer4"></div>
+            </div>
+            <div class="container4">
+                <button onclick="getCurrentDate()">Отримати поточну дату</button>
+                <div id="resultContainer1"></div>
+            </div>
+
+            <div class="containe8">
+                <h2>Розрахунок інтервалу часу</h2>
+            
+                <label for="hourInput1">Година початку:</label>
+                <input type="number" id="hourInput1" min="0" max="23">
+                
+                <label for="minuteInput1">Хвилина початку:</label>
+                <input type="number" id="minuteInput1" min="0" max="59">
+                
+                <label for="hourInput2">Година кінця:</label>
+                <input type="number" id="hourInput2" min="0" max="23">
+                
+                <label for="minuteInput2">Хвилина кінця:</label>
+                <input type="number" id="minuteInput2" min="0" max="59">
+            
+                <button onclick="calculateTimeInterval()">Розрахувати Інтервал</button>
+            
+                <p id="result5"></p>
+            </div>
+
+            <div class="containe9">
+                <h2>Перевірка на числове значення</h2>
+            
+                <input type="text" id="numericInput">
+                
+                <button onclick="checkNumericValue()">Перевірити</button>
+            
+                <p id="result6"></p>
+            </div>
+            <div class="containe10">
+                <h2>Перетворення дати в різних системах</h2>
+            
+                <input type="date" id="birthdateInput7">
+            
+                <button onclick="showNumberRepresentations()">Показати представлення числа</button>
+                <div id="resultContainer7"></div>
+            </div>
+            <div class="containe11">
+                <h2>Обчислення гіпотенузи прямокутного трикутника</h2>
+            
+                <label for="sideA">Довжина катету 1:</label>
+                <input type="number" id="sideA">
+            
+                <label for="sideB">Довжина катету 2:</label>
+                <input type="number" id="sideB">
+            
+                <button onclick="calculateHypotenuse()">Обчислити гіпотенузу</button>
+            
+                <p id="result8"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
